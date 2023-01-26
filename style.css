@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Kumbh Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+:root {
+  --Darkcyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturatedblue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --Dark-gray: hsl(0, 0%, 59%);
+  --fs-main-stats: 1.125rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--Darkcyan);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  max-width: 350px;
+  max-height: 375px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.coverpic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.age {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+  font-size: 18px;
+  margin-left: 10px;
+}
+.profilepic {
+  height: 8rem;
+  width: 8rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-top: -40px;
+}
+
+.profile__name {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  height: 40%;
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 0.5px solid var(--Dark-gray);
+  margin-top: 25px;
+  text-align: center;
+  gap: 2rem;
+}
+h1 {
+  font-size: 18px;
+}
+p {
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 0.1rem;
+}
+.profile__name > p {
+  margin-top: 10px;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
